@@ -1,0 +1,21 @@
+@{
+    ViewBag.Titulo="Confirmar Envio";
+}
+  
+<div class="container text-center">
+    <div class=" mt-2 text-center mb-4">
+        <h1>CONFIRMACIÓN DE ENVIO</h1>
+    </div>
+    <div class="row">
+        <div class="col-6"> 
+            <img src="https://st2.depositphotos.com/3994049/5902/v/950/depositphotos_59026253-stock-illustration-ok-dog.jpg" class="img-fluid">
+        </div>
+        <div class="col-6" style="margin: auto; ">
+        <h4>
+            <p>Estimado @TempData["nombre"] @TempData["apellido"] su mensaje fue enviado con éxito. </p>
+            <p>Responderemos el mensaje lo mas antes posible a @TempData["correo"]</p>
+            <p>GRACIAS!!!!</p>
+        </h4>
+        </div>
+    </div>
+</div>
