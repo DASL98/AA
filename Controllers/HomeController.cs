@@ -4,42 +4,33 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using TrabajoFinalGD.Models;
-using Microsoft.AspNetCore.Mvc;
+using ADOPTAAHORA.Models;
 
-namespace TrabajoFinalGD.Controllers
+namespace ADOPTAAHORA.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Principal()
+        public IActionResult Index()
         {
             return View();
         }
 
-
-        public IActionResult Contacto()
+        public IActionResult Nosotros()
         {
-          return View();
+            return View();
         }
 
-        [HttpPost]
-        public IActionResult Contacto(string nombre, string apellido, string correo)
-        {
-            TempData["nombre"]=nombre;
-            TempData["apellido"]=apellido;
-            TempData["correo"]=correo;
-          return RedirectToAction("ConfirmarEnvio");
-        }
-
-        public IActionResult ConfirmarEnvio()
+        public IActionResult Mascotas()
         {
           //TODO: Implement Realistic Implementation
           return View();
         }
-        
-       public IActionResult Donaciones()
-       {
-         return View();
-       }
+
+        public IActionResult PreguntasFrecuentes()
+        {
+          //TODO: Implement Realistic Implementation
+          return View();
+        }
+
     }
 }

@@ -1,0 +1,45 @@
+#menu-bar{
+	display: none;
+}
+
+header label{
+	float: right;
+	font-size: 28px;
+	margin: 6px 0;
+/*asi aparece la manito cuando pasas el cursos*/
+	cursor: pointer;
+}
+
+.menu{
+	position: absolute;
+	top: 50px;
+	left: 0;
+	width: 100%;
+/*Asi ocupa el 100% del alto de la ventana*/
+	height: 100vh;
+/*negro transparente*/
+	background: rgba(51,51,51,0.9);
+	transition: all 0.5s;
+	transform: translateX(-100%);
+}
+
+.menu a{
+	display: block;
+	color: white;
+	height: 50 px;
+	text-decoration: none;
+	padding: 15px;
+/*blanco transparente*/
+	border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.menu a:hover{
+	background: rgba(255,255,255,0.3);
+}
+
+/*seudoclase checked cuando se seleccione el menu*/
+#menu-bar:checked~.menu{
+	transform: translate(0%);
+}
+
+	

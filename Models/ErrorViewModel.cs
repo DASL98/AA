@@ -1,6 +1,6 @@
 using System;
 
-namespace TrabajoFinalGD.Models
+namespace ADOPTAAHORA.Models
 {
     public class ErrorViewModel
     {
