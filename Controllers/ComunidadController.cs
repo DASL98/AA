@@ -1,5 +1,12 @@
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-namespace ADOPTAAHORA.Controllers
+using AA.Models;
+
+namespace AA.Controllers
 {
     public class ComunidadController: Controller
     {
@@ -8,12 +15,6 @@ namespace ADOPTAAHORA.Controllers
           //TODO: Implement Realistic Implementation
           return View();
         }
-
-        //public IActionResult Solicitud(string nombre, string apellido_paterno, string apellido_materno, int dni, int telefono, string correo, int id_mascota)
-        //{
-          //TODO: Implement Realistic Implementation
-          //return RedirectToAction("ConfirmarSolicitud");
-        //}
 
         public IActionResult ConfirmarSolicitud()
         {
@@ -26,5 +27,6 @@ namespace ADOPTAAHORA.Controllers
           //TODO: Implement Realistic Implementation
           return View();
         }
+        
     }
 }

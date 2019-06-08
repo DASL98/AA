@@ -4,33 +4,50 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using ADOPTAAHORA.Models;
+using AA.Models;
+using AA.Datos;
+using Microsoft.EntityFrameworkCore;
 
-namespace ADOPTAAHORA.Controllers
+namespace AA.Controllers
 {
     public class HomeController : Controller
     {
+        private MascotaContext _context; 
+
+        public HomeController(MascotaContext c)
+        {
+            _context = c;
+        }
+
+        public IActionResult MascotasDisponibles(int tipomascota)
+        {
+            ViewBag.Tipos = _context.Tipos.ToList();
+
+            var mascotas = _context.Mascotas.Include(x => x.Tipo).ToList();
+            
+            if (tipomascota != 0){
+                mascotas = _context.Mascotas.Include(x => x.Tipo).Where(x => x.TipoId == tipomascota).ToList();
+            }
+            
+            return View(mascotas);
+        }
+
+
         public IActionResult Index()
         {
             return View();
         }
 
-        public IActionResult Nosotros()
+        public IActionResult PreguntasFrecuentes()
         {
+        //TODO: Implement Realistic Implementation
             return View();
         }
 
-        public IActionResult Mascotas()
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
         {
-          //TODO: Implement Realistic Implementation
-          return View();
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-
-        public IActionResult PreguntasFrecuentes()
-        {
-          //TODO: Implement Realistic Implementation
-          return View();
-        }
-
     }
 }

@@ -1,9 +1,13 @@
 @model Request
+<!--FALTA CREAR EL MODELO REQUEST PARA AGREGAR
+SOLICITUDES Y UNA VISTA PARA COMO ADMIN VER
+LAS SOLICITUDES PENDIENTES -->
+
 <div class="container"  asp-validation-summary="All">
  <form asp-action="Solicitud" method="post">
   <div class="form-group">
     <label >Codigo mascota</label>
-    <input type="number" class="form-control" asp-for="CodigoM">
+    <input  class="form-control" asp-for="CodigoM">
   </div>
 
   <div class="form-group">

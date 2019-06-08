@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\alumno\\Downloads\\PMFINAL\\ADOPTAAHORA.csproj",
+  "FilePath": "c:\\Users\\USUARIO\\Downloads\\AA\\AA.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-2.1",
     "LanguageVersion": "2.1",
@@ -2756,8 +2756,13 @@
     ],
     "CSharpLanguageVersion": 703
   },
-  "RootNamespace": "ADOPTAAHORA",
+  "RootNamespace": "AA",
   "Documents": [
+    {
+      "FilePath": "Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
     {
       "FilePath": "Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
@@ -2779,6 +2784,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Shared\\_CookieConsentPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_CookieConsentPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
@@ -2789,8 +2799,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\Home\\Mascotas.cshtml",
-      "TargetPath": "Views\\Home\\Mascotas.cshtml",
+      "FilePath": "Views\\Home\\MascotasDisponibles.cshtml",
+      "TargetPath": "Views\\Home\\MascotasDisponibles.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -2799,8 +2809,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Admin\\ConfirmarRegistro.cshtml",
+      "TargetPath": "Views\\Admin\\ConfirmarRegistro.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Home\\PreguntasFrecuentes.cshtml",
       "TargetPath": "Views\\Home\\PreguntasFrecuentes.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {

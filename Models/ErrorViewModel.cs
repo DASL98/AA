@@ -1,6 +1,6 @@
 using System;
 
-namespace ADOPTAAHORA.Models
+namespace AA.Models
 {
     public class ErrorViewModel
     {

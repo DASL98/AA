@@ -1,13 +1,13 @@
 using System.ComponentModel.DataAnnotations;
-namespace ADOPTAAHORA.Models
+
+namespace AA.Models
 {
     public class Request
     {
-
         public int id { get; set; }
 
        [Required]
-        public int CodigoM { get; set; }
+        public string CodigoM { get; set; }
 
         [Required]
         public string Nombre { get; set; }
@@ -23,5 +23,6 @@ namespace ADOPTAAHORA.Models
         [Required]
         public string Telefono { get; set; }
 
+        
     }
 }
