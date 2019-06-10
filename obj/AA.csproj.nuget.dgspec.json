@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\100619\\AA-master\\AA-master\\AA.csproj": {}
+    "G:\\FINAL DE FINALES\\AA\\AA.csproj": {}
   },
   "projects": {
-    "G:\\100619\\AA-master\\AA-master\\AA.csproj": {
+    "G:\\FINAL DE FINALES\\AA\\AA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\100619\\AA-master\\AA-master\\AA.csproj",
+        "projectUniqueName": "G:\\FINAL DE FINALES\\AA\\AA.csproj",
         "projectName": "AA",
-        "projectPath": "G:\\100619\\AA-master\\AA-master\\AA.csproj",
+        "projectPath": "G:\\FINAL DE FINALES\\AA\\AA.csproj",
         "packagesPath": "C:\\Users\\alumno.CIIS\\.nuget\\packages\\",
-        "outputPath": "G:\\100619\\AA-master\\AA-master\\obj\\",
+        "outputPath": "G:\\FINAL DE FINALES\\AA\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
