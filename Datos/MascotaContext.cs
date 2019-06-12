@@ -11,6 +11,24 @@ namespace AA.Datos
 
         public DbSet<TipoMascota> Tipos { get; set;}
 
-        
+        protected override void OnModelCreating(ModelBuilder modelBuilder){
+            modelBuilder.Entity<TipoMascota>().HasData(
+                new TipoMascota {
+                    Id = 1,
+                    Nombre = "Perro"
+                },
+
+                new TipoMascota {
+                    Id = 2,
+                    Nombre = "Gato"
+                },
+
+                new TipoMascota {
+                    Id = 3,
+                    Nombre = "Tapir"
+                }
+            );
+            
+        }
     }
 }
