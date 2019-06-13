@@ -11,6 +11,9 @@ namespace AA.Datos
 
         public DbSet<TipoMascota> Tipos { get; set;}
 
+        public DbSet<Solicitud> Solicitud { get; set;}
+
+        
         protected override void OnModelCreating(ModelBuilder modelBuilder){
             modelBuilder.Entity<TipoMascota>().HasData(
                 new TipoMascota {
@@ -58,7 +61,7 @@ namespace AA.Datos
                     Foto = "https://www.notigatos.es/wp-content/uploads/2017/10/gatito-830x552.jpg"
                     },
                     new Mascota {
-                    Id = 3,
+                    Id = 4,
                     NombreMascota = "Oliver",
                     Peso = 590,
                     CodigoMascota = "TAPIR590",

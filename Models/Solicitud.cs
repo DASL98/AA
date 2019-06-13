@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace AA.Models
 {
-    public class Request
+    public class Solicitud
     {
         public int id { get; set; }
 

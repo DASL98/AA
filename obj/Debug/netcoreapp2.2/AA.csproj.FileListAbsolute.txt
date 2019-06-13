@@ -183,3 +183,4 @@ C:\Users\USUARIO\Desktop\AA-1\obj\Debug\netcoreapp2.2\AA.Views.pdb
 C:\Users\USUARIO\Desktop\AA-1\obj\Debug\netcoreapp2.2\AA.dll
 C:\Users\USUARIO\Desktop\AA-1\obj\Debug\netcoreapp2.2\AA.pdb
 C:\Users\USUARIO\Desktop\AA-1\obj\Debug\netcoreapp2.2\AA.csproj.CopyComplete
+C:\Users\USUARIO\Desktop\AA\obj\Debug\netcoreapp2.2\Razor\Views\Admin\VerSolicitudes.g.cshtml.cs

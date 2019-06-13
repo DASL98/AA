@@ -12,8 +12,6 @@ namespace AA.Controllers
 {
     public class AdminController: Controller
     {
-
-        //CONTEXTO REPETIDO
         private MascotaContext _context;
 
         public AdminController(MascotaContext context){
@@ -51,6 +49,13 @@ namespace AA.Controllers
         public IActionResult IniciarSesion()
         {
           //TODO: Implement Realistic Implementation
+          return View();
+        }
+
+        public IActionResult VerSolicitudes()
+        {
+          var solicitud = _context.Solicitud.OrderByDescending(x => x.id).ToList();
+          ViewBag.solicitud = solicitud;
           return View();
         }
     }

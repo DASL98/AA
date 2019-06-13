@@ -2,14 +2,16 @@
 using AA.Datos;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace AA.Migrations
 {
     [DbContext(typeof(MascotaContext))]
-    partial class MascotaContextModelSnapshot : ModelSnapshot
+    [Migration("20190612185239_MascotasAgregadas")]
+    partial class MascotasAgregadas
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -83,33 +85,6 @@ namespace AA.Migrations
                             Peso = 590,
                             TipoId = 3
                         });
-                });
-
-            modelBuilder.Entity("AA.Models.Solicitud", b =>
-                {
-                    b.Property<int>("id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("ApellidoMaterno");
-
-                    b.Property<string>("ApellidoPaterno")
-                        .IsRequired();
-
-                    b.Property<string>("CodigoM")
-                        .IsRequired();
-
-                    b.Property<string>("Correo")
-                        .IsRequired();
-
-                    b.Property<string>("Nombre")
-                        .IsRequired();
-
-                    b.Property<string>("Telefono")
-                        .IsRequired();
-
-                    b.HasKey("id");
-
-                    b.ToTable("Solicitud");
                 });
 
             modelBuilder.Entity("AA.Models.TipoMascota", b =>

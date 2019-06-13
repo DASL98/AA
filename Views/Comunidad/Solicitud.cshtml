@@ -1,5 +1,5 @@
 </br>
-@model Request
+@model Solicitud
 
 <div class="container">
   <h1 class= "text-center">Bienvenidos a Solicitud de Mascota</h1>
@@ -7,20 +7,20 @@
   <div class="container"  asp-validation-summary="All">
   <form asp-action="Solicitud" method="post">
     <div class="form-group">
-      <label >Codigo mascota</label>
-      <input  class="form-control" asp-for="CodigoM">
-    </div>
-
-    <div class="form-group">
       <label >Nombre</label>
       <input type="text" class="form-control" asp-for="Nombre">
     </div>
 
     <div class="form-group">
       <label>Apellido Paterno</label>
-      <input type="text" class="form-control" asp-for="ApellidoPaterno">
-    
+      <input type="text" class="form-control" asp-for="ApellidoPaterno">    
     </div>
+    
+    <div class="form-group">
+      <label>Apellido Materno</label>
+      <input type="text" class="form-control" asp-for="ApellidoPaterno">
+    </div>
+
     <div class="form-group">
       <label>Correo</label>
       <input type="text" class="form-control" asp-for="Correo">
@@ -29,6 +29,11 @@
     <div class="form-group">
       <label>Telefono</label>
       <input type="number" class="form-control" asp-for="Telefono">
+    </div>
+
+    <div class="form-group">
+      <label >Codigo mascota</label>
+      <input  class="form-control" asp-for="CodigoM">
     </div>
 
     <button type="submit" class="btn btn-primary">Solicitar Adopción</button>
