@@ -1,23 +1,82 @@
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using AA.Models;
+using AA.ViewModels;
 using AA.Datos;
-using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authorization;
 
 namespace AA.Controllers
 {
     public class AdminController: Controller
     {
         private MascotaContext _context;
+        private UserManager<IdentityUser> _userManager;
+        private SignInManager<IdentityUser> _signInManager;
 
-        public AdminController(MascotaContext context){
+        public AdminController(
+          MascotaContext context, 
+          UserManager<IdentityUser> um, 
+          SignInManager<IdentityUser> sim){
             this._context = context;
+            _userManager = um;
+            _signInManager = sim;
         }
 
+        public IActionResult Login()
+        {
+          //TODO: Implement Realistic Implementation
+          return View();
+        }
+
+       [HttpPost]
+        public IActionResult Login(LoginViewModel vm) {
+            if (ModelState.IsValid) {
+                var resultado = _signInManager.PasswordSignInAsync(vm.Usuario, vm.Password, false, false);
+            
+                if (resultado.Result.Succeeded) {
+                    return RedirectToAction("index", "home");
+                }
+                else {
+                    ModelState.AddModelError("", "Usuario o contraseña incorrectos");
+                }
+            }
+
+            return View(vm);
+        }
+
+
+        public IActionResult Registro() {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Registro(RegistroViewModel vm) {
+            if (ModelState.IsValid) {
+                var user = new IdentityUser();
+                user.UserName = vm.Usuario;
+                user.Email = vm.Email;
+
+                var resultado = _userManager.CreateAsync(user, vm.Password);
+
+                if (resultado.Result == IdentityResult.Success) {
+                    return RedirectToAction("index", "home");
+                }
+                else {
+                    foreach (var error in resultado.Result.Errors) {
+                        ModelState.AddModelError("", error.Description);
+                    }
+                }
+            }
+            
+            return View(vm);
+        }
+
+        public IActionResult Logout()
+        {
+          _signInManager.SignOutAsync();
+          return RedirectToAction("index","home");
+        }
         //FORMULARIO INGRESO MASCOTA
         public IActionResult RegistroMascota()
         {
@@ -40,23 +99,98 @@ namespace AA.Controllers
           return View(m);
         }
 
+        public IActionResult ChangePassword(ChangePasswordViewModel vm) {
+            if (ModelState.IsValid) {
+                var user = _userManager.FindByNameAsync(User.Identity.Name).Result;
+                var resultado = _userManager.ChangePasswordAsync(user, vm.PasswordActual, vm.PasswordNuevo);
+
+                if (resultado.Result == IdentityResult.Success) {
+                    return RedirectToAction("index", "home");
+                }
+                else {
+                    foreach (var error in resultado.Result.Errors) {
+                        ModelState.AddModelError("", error.Description);
+                    }
+                }
+               
+            }
+            
+            return View(vm);
+        }
+        
         public IActionResult ConfirmarRegistro()
         {
           //TODO: Implement Realistic Implementation
           return View();
         }
 
-        public IActionResult IniciarSesion()
+
+         public IActionResult Actualizar(int id)
         {
-          //TODO: Implement Realistic Implementation
-          return View();
+            var m = _context.Mascotas.FirstOrDefault(x => x.Id == id);
+
+            if (m == null) {
+                return NotFound();
+            }
+
+            return View(m);
         }
+
+        [HttpPost]
+        public IActionResult Actualizar(Mascota m)
+        {
+            if (ModelState.IsValid) {
+                var mascotaBd = _context.Mascotas.Find(m.Id);
+
+                mascotaBd.NombreMascota = m.NombreMascota;
+                mascotaBd.Peso = m.Peso;
+                mascotaBd.Foto = m.Foto;
+                mascotaBd.Edad = m.Edad;
+
+                _context.SaveChanges();
+
+                return RedirectToAction("Listar");
+            }
+
+            return View(m);
+        }
+
+        public IActionResult Listar()
+        {
+            var mascotas = _context.Mascotas.ToList();
+
+            return View(mascotas);
+        }
+
 
         public IActionResult VerSolicitudes()
         {
           var solicitud = _context.Solicitud.OrderByDescending(x => x.id).ToList();
           ViewBag.solicitud = solicitud;
           return View();
+        }
+         public IActionResult Borrar(int id)
+        {
+            var p = _context.Mascotas.FirstOrDefault(x => x.Id == id);
+
+            if (p != null) {
+                _context.Mascotas.Remove(p);
+                _context.SaveChanges();
+            }
+
+            return RedirectToAction("Listar");
+        }
+
+        public IActionResult BorrarSolicitud(int id)
+        {
+            var s = _context.Solicitud.FirstOrDefault(x => x.id == id);
+
+            if (s != null) {
+                _context.Solicitud.Remove(s);
+                _context.SaveChanges();
+            }
+
+            return RedirectToAction("VerSolicitudes");
         }
     }
 }

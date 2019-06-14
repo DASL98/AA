@@ -1,20 +1,22 @@
 using AA.Models;
+using AA.ViewModels;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace AA.Datos
 {
-    public class MascotaContext: DbContext
-    {
-        public MascotaContext(DbContextOptions<MascotaContext> options) : base(options) {}
-    
+    public class MascotaContext: IdentityDbContext
+    {    
         public DbSet<Mascota> Mascotas{ get; set; }
 
         public DbSet<TipoMascota> Tipos { get; set;}
 
         public DbSet<Solicitud> Solicitud { get; set;}
 
+        public MascotaContext(DbContextOptions<MascotaContext> options) : base(options) {}
         
-        protected override void OnModelCreating(ModelBuilder modelBuilder){
+         
+        /* protected override void OnModelCreating(ModelBuilder modelBuilder){
             modelBuilder.Entity<TipoMascota>().HasData(
                 new TipoMascota {
                     Id = 1,
@@ -70,6 +72,7 @@ namespace AA.Datos
                     Foto = "https://www.elpopular.pe/sites/default/files/styles/img_620x465/public/imagen/2019/03/22/Noticia-232947-youtube_tapir_590_sufre_estafa_con_sus_redes_sociales_y_hace_pedido_a_seguidores.png?itok=NeTL_yoG"
                     }
             );
-        }
+
+        }*/
     }
 }

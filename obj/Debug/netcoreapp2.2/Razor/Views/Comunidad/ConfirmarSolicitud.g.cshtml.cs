@@ -23,8 +23,13 @@ using AA.Models;
 
 #line default
 #line hidden
+#line 3 "C:\Users\USUARIO\Desktop\AA\Views\_ViewImports.cshtml"
+using AA.ViewModels;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"aed8acd8a7542760ce83da2ed6707dcda174c43f", @"/Views/Comunidad/ConfirmarSolicitud.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"70a367a3f8322e0991503bcc5136e86cd6ab87fd", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b2a3e99d851038fb25615aa56bb0310e72aea49b", @"/Views/_ViewImports.cshtml")]
     public class Views_Comunidad_ConfirmarSolicitud : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("href", new global::Microsoft.AspNetCore.Html.HtmlString("~/Home/Index"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -77,7 +82,7 @@ using AA.Models;
     ");
             EndContext();
             BeginContext(475, 566, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "aed8acd8a7542760ce83da2ed6707dcda174c43f4560", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "aed8acd8a7542760ce83da2ed6707dcda174c43f4678", async() => {
                 BeginContext(481, 360, true);
                 WriteLiteral(@"
     <main role=""main"" class=""inner cover"">
@@ -87,7 +92,7 @@ using AA.Models;
         ");
                 EndContext();
                 BeginContext(841, 76, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "aed8acd8a7542760ce83da2ed6707dcda174c43f5310", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "aed8acd8a7542760ce83da2ed6707dcda174c43f5428", async() => {
                     BeginContext(897, 16, true);
                     WriteLiteral("Volver al inicio");
                     EndContext();

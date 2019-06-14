@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using AA.Datos;
+﻿using AA.Datos;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -34,7 +30,7 @@ namespace AA
             });
 
             services.AddDbContext<MascotaContext>(options => options.UseMySql("Server=localhost;database=aa;user=root;password=;"));
-
+            services.AddDefaultIdentity<IdentityUser>().AddEntityFrameworkStores<MascotaContext>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
@@ -56,12 +52,13 @@ namespace AA
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
+            app.UseAuthentication();
 
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=MascotasDisponibles}/{id?}");
+                    template: "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }

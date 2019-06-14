@@ -1,0 +1,34 @@
+@model Mascota
+
+<h1>Formulario de actualización de datos de mascotas</h1>
+
+<form action="~/admin/actualizar" method="post">
+
+<input type="hidden" asp-for="Id">
+
+<div class="form-group">
+    <label>Nombre:</label>
+    <input type="text" class="form-control" asp-for="NombreMascota">
+    @Html.ValidationMessageFor(m => m.NombreMascota, "", new { @class = "text-danger" })
+</div>
+
+<div class="form-group">
+    <label>Peso:</label>
+    <input type="number" class="form-control" asp-for="Peso">
+    @Html.ValidationMessageFor(m => m.Peso, "", new { @class = "text-danger" })
+</div>
+
+<div class="form-group">
+    <label>Foto:</label>
+    <input type="text" class="form-control" asp-for="Foto" >
+</div>
+
+<div class="form-group">
+    <label>Edad:</label>
+    <input type="int" class="form-control" asp-for="Edad" >
+    @Html.ValidationMessageFor(m => m.Edad, "", new { @class = "text-danger" })
+</div>
+
+<button class="btn btn-primary">Actualizar</button>
+
+</form>

@@ -1,0 +1,31 @@
+@model List<Mascota>
+
+<h1>Listado de mascotas</h1>
+
+<table class="table">
+    <tr>
+        <th>Id</th>
+        <th>Nombre</th>
+        <th>Foto</th>
+        <th>Peso</th>
+        <th>Codigo mascota</th>
+        <th>Edad</th>
+    </tr>
+
+    @foreach(var m in Model) {
+        <tr>
+            <td>@m.Id</td>
+            <td>@m.NombreMascota</td>
+            <td><img src="@m.Foto" width="100"></td>
+            <td>@m.Peso</td>
+            <td>@m.CodigoMascota</td>
+            <td>@m.Edad</td>
+            <td>
+                <a href="~/admin/actualizar/@m.Id">Actualizar</a> | 
+                <a href="~/admin/borrar/@m.Id">Borrar</a>
+            </td>
+        </tr>
+    }
+    
+
+</table>

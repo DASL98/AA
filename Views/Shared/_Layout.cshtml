@@ -13,7 +13,7 @@
     <div class="container mt-4">
         <div class=row>
             <div class=col-4>
-                <img src="http://adoptasalvaunavida.com/_mibambu/_salvaunavida/imas/logo-mobile.jpg" width="150">
+                <img src="http://adoptasalvaunavida.com/_mibambu/_salvaunavida/imas/logo-mobile.jpg" width="150" href="/Home/Index">
             </div>
             <div class=col-4>
                 <h1 style="font-family:'Courier New', Courier, monospace">AdoptaAhora.com</h1>
@@ -23,6 +23,31 @@
 
     <div class="container">
         <ul class="nav nav-pills nav-fill">
+            @if (Context.User.Identity.IsAuthenticated){
+                <li class="nav-item">
+                    <a class="nav-link active" href="/Home/Index">Inicio</a>
+                </li>
+
+                <li class="nav-item">
+                <a class="nav-link active" href="/Admin/Listar">Lista de mascotas</a>
+                </li>
+
+                <li class="nav-item">
+                <a class="nav-link active" href="/Admin/RegistroMascota">Registrar mascota</a>
+                </li>
+
+                <li class="nav-item">
+                <a class="nav-link active" href="/Admin/VerSolicitudes">Lista de solicitudes</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="/Admin/ChangePassword">Cambiar contraseña</a>
+                </li>
+
+                <li class="nav-item">
+                <a class="nav-link active" asp-controller="Admin" asp-action="Logout">Salir</a>
+                </li>
+            }else{
             <li class="nav-item">
                 <a class="nav-link active" href="/Home/Index">Nosotros</a>
             </li>
@@ -39,17 +64,28 @@
                 <a class="nav-link active" href="/Home/MascotasDisponibles">Mascotas</a>
             </li>
             <li>
-                <a class="nav-link" href="/Admin/IniciarSesion">Admin mode</a>
+                <a class="nav-link" href="/Admin/Login">Admin mode</a>
             </li>
+            }
         </ul>
     </div>
 
 @RenderBody()
 
 <footer class="border-top footer text-muted">
+        @if (Context.User.Identity.IsAuthenticated){
         <div class="container">
             &copy; @DateTime.Now.Year - AdoptaAhora.com 
         </div>
+        <div class="container">
+            <a class="nav-link" href="/Admin/Registro">Registrar admin</a>
+        </div>
+        }else{
+        <div class="container">
+            &copy; @DateTime.Now.Year - AdoptaAhora.com 
+        </div>      
+        }
+
     </footer>    
 </body>
 

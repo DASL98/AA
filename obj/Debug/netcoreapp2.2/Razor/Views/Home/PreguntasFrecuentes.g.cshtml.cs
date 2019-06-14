@@ -23,8 +23,13 @@ using AA.Models;
 
 #line default
 #line hidden
+#line 3 "C:\Users\USUARIO\Desktop\AA\Views\_ViewImports.cshtml"
+using AA.ViewModels;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"63ca4c27ae8780166bd1b845eb01c86fdababbb8", @"/Views/Home/PreguntasFrecuentes.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"70a367a3f8322e0991503bcc5136e86cd6ab87fd", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b2a3e99d851038fb25615aa56bb0310e72aea49b", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_PreguntasFrecuentes : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("width", new global::Microsoft.AspNetCore.Html.HtmlString("200"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.SingleQuotes);
@@ -81,7 +86,7 @@ using AA.Models;
     ");
             EndContext();
             BeginContext(595, 9368, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "63ca4c27ae8780166bd1b845eb01c86fdababbb85337", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "63ca4c27ae8780166bd1b845eb01c86fdababbb85455", async() => {
                 BeginContext(601, 1153, true);
                 WriteLiteral(@"
         <h1></h1>
@@ -105,7 +110,7 @@ using AA.Models;
                 WriteLiteral(" class=\"stretched-link\">Continuar Leyendo</a>\n            </div>\n            <div class=\"col-auto d-none d-lg-block\">\n           ");
                 EndContext();
                 BeginContext(1754, 55, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "63ca4c27ae8780166bd1b845eb01c86fdababbb86946", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "63ca4c27ae8780166bd1b845eb01c86fdababbb87064", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -140,7 +145,7 @@ using AA.Models;
             ");
                 EndContext();
                 BeginContext(2547, 55, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "63ca4c27ae8780166bd1b845eb01c86fdababbb89120", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "63ca4c27ae8780166bd1b845eb01c86fdababbb89238", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

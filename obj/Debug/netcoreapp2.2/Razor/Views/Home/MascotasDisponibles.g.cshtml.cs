@@ -23,8 +23,13 @@ using AA.Models;
 
 #line default
 #line hidden
+#line 3 "C:\Users\USUARIO\Desktop\AA\Views\_ViewImports.cshtml"
+using AA.ViewModels;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a591e97afaf73c1b01fa6110acce8d6af881005e", @"/Views/Home/MascotasDisponibles.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"70a367a3f8322e0991503bcc5136e86cd6ab87fd", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b2a3e99d851038fb25615aa56bb0310e72aea49b", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_MascotasDisponibles : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<List<Mascota>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("value", "0", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -59,12 +64,12 @@ using AA.Models;
             WriteLiteral("\n<div class =\"container \">\n    </br>\n    <div class = \"bg-dark text-center mb-2 text-white\">\n    <h1 class = \"mb-2 bg-dark text-white text-center\">Mascotas para adopción</h1>\n\n    ");
             EndContext();
             BeginContext(201, 398, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a591e97afaf73c1b01fa6110acce8d6af881005e4900", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a591e97afaf73c1b01fa6110acce8d6af881005e5018", async() => {
                 BeginContext(274, 93, true);
                 WriteLiteral("\n        <h4>Filtrar por tipo mascota: </h4>\n        <select name=\"tipomascota\">\n            ");
                 EndContext();
                 BeginContext(367, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a591e97afaf73c1b01fa6110acce8d6af881005e5376", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a591e97afaf73c1b01fa6110acce8d6af881005e5494", async() => {
                     BeginContext(385, 5, true);
                     WriteLiteral("Todos");
                     EndContext();
@@ -94,7 +99,7 @@ using AA.Models;
                 WriteLiteral("                ");
                 EndContext();
                 BeginContext(482, 40, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a591e97afaf73c1b01fa6110acce8d6af881005e7137", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a591e97afaf73c1b01fa6110acce8d6af881005e7255", async() => {
                     BeginContext(505, 8, false);
 #line 13 "C:\Users\USUARIO\Desktop\AA\Views\Home\MascotasDisponibles.cshtml"
                                  Write(t.Nombre);

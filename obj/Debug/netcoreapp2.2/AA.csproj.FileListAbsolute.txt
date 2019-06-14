@@ -34,7 +34,6 @@ C:\Users\USUARIO\Desktop\AA\obj\Debug\netcoreapp2.2\Razor\Views\Comunidad\Ayuda.
 C:\Users\USUARIO\Desktop\AA\obj\Debug\netcoreapp2.2\Razor\Views\Comunidad\ConfirmarSolicitud.g.cshtml.cs
 C:\Users\USUARIO\Desktop\AA\obj\Debug\netcoreapp2.2\Razor\Views\Comunidad\Solicitud.g.cshtml.cs
 C:\Users\USUARIO\Desktop\AA\obj\Debug\netcoreapp2.2\Razor\Views\Home\PreguntasFrecuentes.g.cshtml.cs
-C:\Users\USUARIO\Desktop\AA\obj\Debug\netcoreapp2.2\Razor\Views\Admin\IniciarSesion.g.cshtml.cs
 C:\Users\USUARIO\Downloads\AA\bin\Debug\netcoreapp2.2\AA.deps.json
 C:\Users\USUARIO\Downloads\AA\bin\Debug\netcoreapp2.2\AA.runtimeconfig.json
 C:\Users\USUARIO\Downloads\AA\bin\Debug\netcoreapp2.2\AA.runtimeconfig.dev.json
@@ -184,3 +183,8 @@ C:\Users\USUARIO\Desktop\AA-1\obj\Debug\netcoreapp2.2\AA.dll
 C:\Users\USUARIO\Desktop\AA-1\obj\Debug\netcoreapp2.2\AA.pdb
 C:\Users\USUARIO\Desktop\AA-1\obj\Debug\netcoreapp2.2\AA.csproj.CopyComplete
 C:\Users\USUARIO\Desktop\AA\obj\Debug\netcoreapp2.2\Razor\Views\Admin\VerSolicitudes.g.cshtml.cs
+C:\Users\USUARIO\Desktop\AA\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Login.g.cshtml.cs
+C:\Users\USUARIO\Desktop\AA\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Actualizar.g.cshtml.cs
+C:\Users\USUARIO\Desktop\AA\obj\Debug\netcoreapp2.2\Razor\Views\Admin\ChangePassword.g.cshtml.cs
+C:\Users\USUARIO\Desktop\AA\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Registro.g.cshtml.cs
+C:\Users\USUARIO\Desktop\AA\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Listar.g.cshtml.cs

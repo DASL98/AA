@@ -2988,6 +2988,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Admin\\Actualizar.cshtml",
+      "TargetPath": "Views\\Admin\\Actualizar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Admin\\ChangePassword.cshtml",
+      "TargetPath": "Views\\Admin\\ChangePassword.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Comunidad\\Ayuda.cshtml",
       "TargetPath": "Views\\Comunidad\\Ayuda.cshtml",
       "FileKind": "mvc"
@@ -3013,13 +3023,23 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Admin\\Registro.cshtml",
+      "TargetPath": "Views\\Admin\\Registro.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Admin\\Login.cshtml",
+      "TargetPath": "Views\\Admin\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Admin\\RegistroMascota.cshtml",
       "TargetPath": "Views\\Admin\\RegistroMascota.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\Admin\\IniciarSesion.cshtml",
-      "TargetPath": "Views\\Admin\\IniciarSesion.cshtml",
+      "FilePath": "Views\\Admin\\Listar.cshtml",
+      "TargetPath": "Views\\Admin\\Listar.cshtml",
       "FileKind": "mvc"
     }
   ]
