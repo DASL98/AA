@@ -1,14 +1,13 @@
 @model LoginViewModel
 
-<h1>Iniciar sesión: Modo Admin</h1>
-
 <div class="container">
-  <body class="text-center">
-      <form asp-action="login" method="post" class="form-signin">
+    <form asp-action="login" method="post" class="form-signin">
     <h1></h1>
 
-    <img class="mb-4" src="~/images/Login.png" alt="" width="200" height="200">
-    <h1 class="text-center">Iniciar Sesion</h1>
+    <h1 class="text-center">Iniciar Sesion (Modo Admin)</h1>
+    <div class="text-center">
+    <img class="text-center" src="~/images/Login.png" alt="" width="200" height="200">
+    </div>
         </br>
     <label class="sr-only">Usuario</label>
     <input asp-for="Usuario" class="form-control" placeholder="Usuario">
@@ -18,7 +17,5 @@
     <input type="password" asp-for="Password" class="form-control" placeholder="Password">
         </br>
     <button class="btn btn-lg btn-primary btn-block" type="submit">Iniciar Sesion</button>
-
   </form>
-  </body>
 </div> 

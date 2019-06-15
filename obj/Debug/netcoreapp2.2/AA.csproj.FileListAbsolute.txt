@@ -51,7 +51,6 @@ C:\Users\USUARIO\Downloads\AA\obj\Debug\netcoreapp2.2\AA.TagHelpers.input.cache
 C:\Users\USUARIO\Downloads\AA\obj\Debug\netcoreapp2.2\AA.TagHelpers.output.cache
 C:\Users\USUARIO\Downloads\AA\obj\Debug\netcoreapp2.2\AA.RazorCoreGenerate.cache
 C:\Users\USUARIO\Downloads\AA\obj\Debug\netcoreapp2.2\Razor\Views\Admin\ConfirmarRegistro.g.cshtml.cs
-C:\Users\USUARIO\Downloads\AA\obj\Debug\netcoreapp2.2\Razor\Views\Admin\IniciarSesion.g.cshtml.cs
 C:\Users\USUARIO\Downloads\AA\obj\Debug\netcoreapp2.2\Razor\Views\Admin\RegistroMascota.g.cshtml.cs
 C:\Users\USUARIO\Downloads\AA\obj\Debug\netcoreapp2.2\Razor\Views\Comunidad\Ayuda.g.cshtml.cs
 C:\Users\USUARIO\Downloads\AA\obj\Debug\netcoreapp2.2\Razor\Views\Comunidad\ConfirmarSolicitud.g.cshtml.cs
@@ -188,3 +187,9 @@ C:\Users\USUARIO\Desktop\AA\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Actualizar
 C:\Users\USUARIO\Desktop\AA\obj\Debug\netcoreapp2.2\Razor\Views\Admin\ChangePassword.g.cshtml.cs
 C:\Users\USUARIO\Desktop\AA\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Registro.g.cshtml.cs
 C:\Users\USUARIO\Desktop\AA\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Listar.g.cshtml.cs
+C:\Users\USUARIO\Downloads\AA\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Actualizar.g.cshtml.cs
+C:\Users\USUARIO\Downloads\AA\obj\Debug\netcoreapp2.2\Razor\Views\Admin\ChangePassword.g.cshtml.cs
+C:\Users\USUARIO\Downloads\AA\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Listar.g.cshtml.cs
+C:\Users\USUARIO\Downloads\AA\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Login.g.cshtml.cs
+C:\Users\USUARIO\Downloads\AA\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Registro.g.cshtml.cs
+C:\Users\USUARIO\Downloads\AA\obj\Debug\netcoreapp2.2\Razor\Views\Admin\VerSolicitudes.g.cshtml.cs

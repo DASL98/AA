@@ -63,29 +63,51 @@
             <li class="nav-item">
                 <a class="nav-link active" href="/Home/MascotasDisponibles">Mascotas</a>
             </li>
-            <li>
-                <a class="nav-link" href="/Admin/Login">Admin mode</a>
-            </li>
             }
         </ul>
     </div>
 
 @RenderBody()
 
-<footer class="border-top footer text-muted">
+<footer class="text-muted">
         @if (Context.User.Identity.IsAuthenticated){
         <div class="container">
+        <p class="float-right">
+            <div class="container">
+                <p class="float-right"><a href="#">Volver arriba </a> 
+                <p><a class="nav-link" href="/Admin/Registro">Registrar admin</a>
+            </div>
+        </p>
+            <p>&copy; @DateTime.Now.Year - AdoptaAhora.com </p>
+        </div>
+        
+        /*<div class="container">
             &copy; @DateTime.Now.Year - AdoptaAhora.com 
         </div>
         <div class="container">
             <a class="nav-link" href="/Admin/Registro">Registrar admin</a>
         </div>
+        */
         }else{
-        <div class="container">
+        
+        /*<div class="container">
             &copy; @DateTime.Now.Year - AdoptaAhora.com 
-        </div>      
-        }
+        </div>
 
+        <div>
+            <a class="nav-link" href="/Admin/Login">Admin mode</a>
+        </div>      
+        }*/
+  <div class="container">
+    <p class="float-right">
+        <div class="container">
+            <p class="float-right"><a href="#">Volver arriba </a> 
+            <p><a href="/Admin/Login">Admin mode</a>
+        </div>
+    </p>
+    <p>&copy; @DateTime.Now.Year - AdoptaAhora.com </p>
+  </div>
+    }
     </footer>    
 </body>
 

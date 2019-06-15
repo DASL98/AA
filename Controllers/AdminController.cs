@@ -125,9 +125,9 @@ namespace AA.Controllers
         }
 
 
-         public IActionResult Actualizar(int id)
+         public IActionResult Actualizar(int Id)
         {
-            var m = _context.Mascotas.FirstOrDefault(x => x.Id == id);
+            var m = _context.Mascotas.FirstOrDefault(x => x.Id == Id);
 
             if (m == null) {
                 return NotFound();
@@ -139,20 +139,19 @@ namespace AA.Controllers
         [HttpPost]
         public IActionResult Actualizar(Mascota m)
         {
-            if (ModelState.IsValid) {
-                var mascotaBd = _context.Mascotas.Find(m.Id);
+                var mascota = _context.Mascotas.Find(m.Id);
 
-                mascotaBd.NombreMascota = m.NombreMascota;
-                mascotaBd.Peso = m.Peso;
-                mascotaBd.Foto = m.Foto;
-                mascotaBd.Edad = m.Edad;
+                mascota.NombreMascota = m.NombreMascota;
+                mascota.Peso = m.Peso;
+                mascota.Foto = m.Foto;
+                mascota.Edad = m.Edad;
 
                 _context.SaveChanges();
 
                 return RedirectToAction("Listar");
-            }
+   
 
-            return View(m);
+            //return View(m);
         }
 
         public IActionResult Listar()
