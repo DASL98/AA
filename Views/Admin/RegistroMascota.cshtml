@@ -1,42 +1,45 @@
 @model Mascota
+
 <div class="container"  asp-validation-summary="All">
- <form asp-action="RegistroMascota" method="post">
-  <div class="form-group">
-    <label>Nombre Temporal:</label>
-    <input type="text" class="form-control" asp-for="NombreMascota">
-  </div>
+  <h1></h1>
+  <h1 class= "text-center alert alert-warning">Registro de Mascotas</h1>
+  <form asp-action="RegistroMascota" method="post">
+    <div class="form-group">
+      <label>Nombre Temporal:</label>
+      <input type="text" class="form-control" asp-for="NombreMascota">
+    </div>
 
-  <div class="form-group">
-    <label >Peso en gramos:</label>
-    <input class="form-control" asp-for="Peso">
-  </div>
+    <div class="form-group">
+      <label >Peso en gramos:</label>
+      <input class="form-control" asp-for="Peso">
+    </div>
 
-  <div class="form-group">
-    <label>Codigo Mascota:</label>
-    <input  class="form-control" asp-for="CodigoMascota">
-  
-  </div>
-  <div class="form-group">
-    <label>Edad en meses:</label>
-    <input  class="form-control" asp-for="Edad">
-  </div>
+    <div class="form-group">
+      <label>Codigo Mascota:</label>
+      <input  class="form-control" asp-for="CodigoMascota">
+    
+    </div>
+    <div class="form-group">
+      <label>Edad en meses:</label>
+      <input  class="form-control" asp-for="Edad">
+    </div>
 
-  <div class="form-group">
-    <label>Foto:</label>
-    <input  class="form-control" asp-for="Foto">
-  </div>
+    <div class="form-group">
+      <label>Foto:</label>
+      <input  class="form-control" asp-for="Foto">
+    </div>
 
-  <div class="form-group">
-    <label>Tipo:</label>
-        <select name="TipoId">
-            @foreach(var t in (List<TipoMascota>)ViewBag.Tipos) {
-                <option value="@t.Id">@t.Nombre</option>
-            }
-        </select>  
-  </div>
+    <div class="form-group">
+      <label>Tipo:</label>
+          <select name="TipoId">
+              @foreach(var t in (List<TipoMascota>)ViewBag.Tipos) {
+                  <option value="@t.Id">@t.Nombre</option>
+              }
+          </select>  
+    </div>
 
-  <button type="submit" class="btn btn-primary">Registrar Mascota</button>
-</form>
+    <button type="submit" class="btn btn-primary">Registrar Mascota</button>
+  </form>
 
 </div>
 

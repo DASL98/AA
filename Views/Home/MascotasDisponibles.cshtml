@@ -13,11 +13,13 @@
                 <option value="@t.Id">@t.Nombre</option>
             }
         </select>
-        <button>Filtrar</button>
+        <button type="submit" class="btn btn-primary" >Filtrar</button>
     </form>
     </div>
     @if (Model.Count == 0) {
-        <p>Aún no hay mascotas para adoptar.</p>
+        <div class = "text-center alert alert-danger " role ="alert">
+            <p>Aún no hay mascotas para adoptar.</p>
+        </div>
     }
     </br>
     <div class="container">
@@ -30,13 +32,13 @@
                 <h2 class="d-inline-block mb-2 text-primary">@m.NombreMascota</h2>
                 <ul>
                     <li> Codigo de Mascota :@m.CodigoMascota</li>
-                    <li> Edad en meses: @m.Edad </li>
-                    <li> Peso en gramos: @m.Peso  </li>
+                    <li> Edad: @m.Edad meses</li>
+                    <li> Peso: @m.Peso gramos</li>
                     <li>Tipo: @m.Tipo.Nombre</li>
                 </ul>
                 </div>
                 <div class="col-auto d-none d-lg-block">
-                <img src="@m.Foto" width="200" class="rounded mx-auto d-block text-middle">
+                <img src="@m.Foto" width="200" height="200" class="rounded mx-auto d-block text-middle">
                 
                 </div>
             </div>

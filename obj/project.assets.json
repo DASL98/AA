@@ -12174,11 +12174,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\USUARIO\\Desktop\\AA\\AA.csproj",
+      "projectUniqueName": "C:\\Users\\USUARIO\\Downloads\\AA\\AA.csproj",
       "projectName": "AA",
-      "projectPath": "C:\\Users\\USUARIO\\Desktop\\AA\\AA.csproj",
+      "projectPath": "C:\\Users\\USUARIO\\Downloads\\AA\\AA.csproj",
       "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\USUARIO\\Desktop\\AA\\obj\\",
+      "outputPath": "C:\\Users\\USUARIO\\Downloads\\AA\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

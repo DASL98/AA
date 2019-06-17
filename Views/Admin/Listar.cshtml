@@ -1,33 +1,34 @@
 @model List<Mascota>
 
-<div class="container">
-<h1>Listado de mascotas</h1>
-<table class="table">
-    <tr>
-        <th>Id</th>
-        <th>Nombre</th>
-        <th>Foto</th>
-        <th>Peso</th>
-        <th>Codigo mascota</th>
-        <th>Edad</th>
-        <th>Opciones</th>
-    </tr>
-
-    @foreach(var m in Model) {
-        <tr>
-            <td>@m.Id</td>
-            <td>@m.NombreMascota</td>
-            <td><img src="@m.Foto" width="100"></td>
-            <td>@m.Peso</td>
-            <td>@m.CodigoMascota</td>
-            <td>@m.Edad</td>
-            <td>
-                <a href="~/admin/actualizar/@m.Id">Actualizar</a> | 
-                <a href="~/admin/borrar/@m.Id">Borrar</a>
-            </td>
+<div class="container ">
+    <h1></h1>
+    <h1 class = "text-center alert alert-success">Listado de mascotas</h1>
+    <table class="table">
+        <tr class ="thead-dark">
+            <th scope="col">Id</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Foto</th>
+            <th scope="col">Peso</th>
+            <th scope="col">Codigo mascota</th>
+            <th scope="col">Edad</th>
+            <th scope="col">Opciones</th>
         </tr>
-    }
-    
 
-</table>
+        @foreach(var m in Model) {
+            <tr class="thead-light">
+                <td >@m.Id</td>
+                <td>@m.NombreMascota</td>
+                <td><img src="@m.Foto" width="100"></td>
+                <td>@m.Peso</td>
+                <td>@m.CodigoMascota</td>
+                <td>@m.Edad</td>
+                <td>
+                    <a href="~/admin/actualizar/@m.Id">Actualizar</a> | 
+                    <a href="~/admin/borrar/@m.Id">Borrar</a>
+                </td>
+            </tr>
+        }
+        
+
+    </table>
 </div>

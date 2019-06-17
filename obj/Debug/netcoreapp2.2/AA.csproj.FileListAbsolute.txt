@@ -193,3 +193,45 @@ C:\Users\USUARIO\Downloads\AA\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Listar.g
 C:\Users\USUARIO\Downloads\AA\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Login.g.cshtml.cs
 C:\Users\USUARIO\Downloads\AA\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Registro.g.cshtml.cs
 C:\Users\USUARIO\Downloads\AA\obj\Debug\netcoreapp2.2\Razor\Views\Admin\VerSolicitudes.g.cshtml.cs
+C:\Users\Diego\Desktop\PM\ULTIMO FINA\AA-master\bin\Debug\netcoreapp2.2\AA.deps.json
+C:\Users\Diego\Desktop\PM\ULTIMO FINA\AA-master\bin\Debug\netcoreapp2.2\AA.runtimeconfig.json
+C:\Users\Diego\Desktop\PM\ULTIMO FINA\AA-master\bin\Debug\netcoreapp2.2\AA.runtimeconfig.dev.json
+C:\Users\Diego\Desktop\PM\ULTIMO FINA\AA-master\bin\Debug\netcoreapp2.2\AA.dll
+C:\Users\Diego\Desktop\PM\ULTIMO FINA\AA-master\bin\Debug\netcoreapp2.2\AA.pdb
+C:\Users\Diego\Desktop\PM\ULTIMO FINA\AA-master\bin\Debug\netcoreapp2.2\AA.Views.dll
+C:\Users\Diego\Desktop\PM\ULTIMO FINA\AA-master\bin\Debug\netcoreapp2.2\AA.Views.pdb
+C:\Users\Diego\Desktop\PM\ULTIMO FINA\AA-master\obj\Debug\netcoreapp2.2\AA.csprojAssemblyReference.cache
+C:\Users\Diego\Desktop\PM\ULTIMO FINA\AA-master\obj\Debug\netcoreapp2.2\AA.csproj.CoreCompileInputs.cache
+C:\Users\Diego\Desktop\PM\ULTIMO FINA\AA-master\obj\Debug\netcoreapp2.2\AA.RazorAssemblyInfo.cache
+C:\Users\Diego\Desktop\PM\ULTIMO FINA\AA-master\obj\Debug\netcoreapp2.2\AA.RazorAssemblyInfo.cs
+C:\Users\Diego\Desktop\PM\ULTIMO FINA\AA-master\obj\Debug\netcoreapp2.2\AA.AssemblyInfoInputs.cache
+C:\Users\Diego\Desktop\PM\ULTIMO FINA\AA-master\obj\Debug\netcoreapp2.2\AA.AssemblyInfo.cs
+C:\Users\Diego\Desktop\PM\ULTIMO FINA\AA-master\obj\Debug\netcoreapp2.2\AA.TagHelpers.input.cache
+C:\Users\Diego\Desktop\PM\ULTIMO FINA\AA-master\obj\Debug\netcoreapp2.2\AA.TagHelpers.output.cache
+C:\Users\Diego\Desktop\PM\ULTIMO FINA\AA-master\obj\Debug\netcoreapp2.2\AA.RazorCoreGenerate.cache
+C:\Users\Diego\Desktop\PM\ULTIMO FINA\AA-master\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Actualizar.g.cshtml.cs
+C:\Users\Diego\Desktop\PM\ULTIMO FINA\AA-master\obj\Debug\netcoreapp2.2\Razor\Views\Admin\ChangePassword.g.cshtml.cs
+C:\Users\Diego\Desktop\PM\ULTIMO FINA\AA-master\obj\Debug\netcoreapp2.2\Razor\Views\Admin\ConfirmarRegistro.g.cshtml.cs
+C:\Users\Diego\Desktop\PM\ULTIMO FINA\AA-master\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Listar.g.cshtml.cs
+C:\Users\Diego\Desktop\PM\ULTIMO FINA\AA-master\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Login.g.cshtml.cs
+C:\Users\Diego\Desktop\PM\ULTIMO FINA\AA-master\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Registro.g.cshtml.cs
+C:\Users\Diego\Desktop\PM\ULTIMO FINA\AA-master\obj\Debug\netcoreapp2.2\Razor\Views\Admin\RegistroMascota.g.cshtml.cs
+C:\Users\Diego\Desktop\PM\ULTIMO FINA\AA-master\obj\Debug\netcoreapp2.2\Razor\Views\Admin\VerSolicitudes.g.cshtml.cs
+C:\Users\Diego\Desktop\PM\ULTIMO FINA\AA-master\obj\Debug\netcoreapp2.2\Razor\Views\Comunidad\Ayuda.g.cshtml.cs
+C:\Users\Diego\Desktop\PM\ULTIMO FINA\AA-master\obj\Debug\netcoreapp2.2\Razor\Views\Comunidad\ConfirmarSolicitud.g.cshtml.cs
+C:\Users\Diego\Desktop\PM\ULTIMO FINA\AA-master\obj\Debug\netcoreapp2.2\Razor\Views\Comunidad\Solicitud.g.cshtml.cs
+C:\Users\Diego\Desktop\PM\ULTIMO FINA\AA-master\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\Diego\Desktop\PM\ULTIMO FINA\AA-master\obj\Debug\netcoreapp2.2\Razor\Views\Home\MascotasDisponibles.g.cshtml.cs
+C:\Users\Diego\Desktop\PM\ULTIMO FINA\AA-master\obj\Debug\netcoreapp2.2\Razor\Views\Home\PreguntasFrecuentes.g.cshtml.cs
+C:\Users\Diego\Desktop\PM\ULTIMO FINA\AA-master\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\Diego\Desktop\PM\ULTIMO FINA\AA-master\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\Diego\Desktop\PM\ULTIMO FINA\AA-master\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\Diego\Desktop\PM\ULTIMO FINA\AA-master\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\Diego\Desktop\PM\ULTIMO FINA\AA-master\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\Diego\Desktop\PM\ULTIMO FINA\AA-master\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\Diego\Desktop\PM\ULTIMO FINA\AA-master\obj\Debug\netcoreapp2.2\AA.RazorTargetAssemblyInfo.cache
+C:\Users\Diego\Desktop\PM\ULTIMO FINA\AA-master\obj\Debug\netcoreapp2.2\AA.RazorTargetAssemblyInfo.cs
+C:\Users\Diego\Desktop\PM\ULTIMO FINA\AA-master\obj\Debug\netcoreapp2.2\AA.Views.pdb
+C:\Users\Diego\Desktop\PM\ULTIMO FINA\AA-master\obj\Debug\netcoreapp2.2\AA.dll
+C:\Users\Diego\Desktop\PM\ULTIMO FINA\AA-master\obj\Debug\netcoreapp2.2\AA.pdb
+C:\Users\Diego\Desktop\PM\ULTIMO FINA\AA-master\obj\Debug\netcoreapp2.2\AA.csproj.CopyComplete
